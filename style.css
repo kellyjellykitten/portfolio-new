@@ -78,40 +78,54 @@ section .title::after{
 }
 
 /* navbar styling */
-.navbar{
+/* .navbar{
     position: fixed;
     width: 100%;
     z-index: 999;
     padding: 30px 0;
     font-family: 'Ubuntu', sans-serif;
     transition: all 0.3s ease;
+} */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    color: black;
+    z-index: 12;
 }
 .navbar.sticky{
     padding: 15px 0;
     background: crimson;
 }
-.navbar .max-width{
+/* .navbar .max-width{
     display: flex;
     align-items: center;
     justify-content: space-between;
+} */
+.navbar .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .navbar .logo a {
-    color: #4cd15a;
-    width: 42px;
+    color: #112240;
+    width: 100%;
     height: 42px;
-}
+} 
 /* .navbar .logo a{
     color: #fff;
     font-size: 35px;
     font-weight: 600;
-}
+} */
 .navbar .logo a span{
     color: crimson;
     transition: all 0.3s ease;
-} */
+} 
 .navbar.sticky .logo a span{
     color: #4cd15a;
-}
+} 
 .navbar .menu li{
     list-style: none;
     display: inline-block;
@@ -172,7 +186,7 @@ section .title::after{
     display: flex;
     background: url("images/banner.jpg") no-repeat center;
     height: 100vh;
-    color: #fff;
+    color: black;
     min-height: 500px;
     background-size: cover;
     background-attachment: fixed;
