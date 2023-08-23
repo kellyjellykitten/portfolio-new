@@ -77,8 +77,25 @@ section .title::after{
     transform: translateX(-50%);
 }
 
-/* nav bar styling */
-.nav-header {
+/* navbar styling */
+.navbar {
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    padding: 30px 0;
+    font-family: 'Ubuntu', sans-serif;
+    transition: all 0.3s ease;
+}
+.navbar.sticky{
+    padding: 15px 0;
+    background: crimson;
+}
+.navbar .max-width {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/* .nav-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -93,8 +110,8 @@ section .title::after{
     filter: none !important;
     pointer-events: auto !important;
     user-select: auto !important;
-}
-.navbar {
+} */
+/* .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -105,7 +122,7 @@ section .title::after{
     color: darkgreen;
     counter-reset: item 0;
     z-index: 12;
-}
+} */
 .navbar .logo {
     flex: 1;
 }
@@ -117,7 +134,32 @@ section .title::after{
 .navbar .logo img {
     width: 45px;
 }
-.navbar-links {
+.navbar .logo a span{
+    color: crimson;
+    transition: all 0.3s ease;
+}
+.navbar.sticky .logo a span{
+    color: #4cd15a;
+}
+.navbar .menu li {
+    list-style: none;
+    display: inline-block;
+}
+.navbar .menu li a {
+    display: block;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 25px;
+    transition: color 0.3s ease;
+}
+.navbar .menu li a:hover {
+    color: crimson;
+}
+.navbar.sticky .menu li a:hover {
+    color: #fff;
+}
+/* .navbar-links {
     display: flex;
     align-items: center;
 }
@@ -140,23 +182,7 @@ section .title::after{
     text-decoration: none;
     position: relative;
     color: white
-}
-
-.navbar.sticky{
-    padding: 15px 0;
-    background: crimson;
-}
-
-.navbar .logo a span{
-    color: crimson;
-    transition: all 0.3s ease;
-} 
-.navbar.sticky .logo a span{
-    color: #4cd15a;
-} 
-.navbar.sticky .menu li a:hover{
-    color: #fff;
-}
+} */
 
 /* menu btn styling */
 .menu-btn{
@@ -164,7 +190,6 @@ section .title::after{
     font-size: 23px;
     cursor: pointer;
     display: none;
-    z-index: 10;
 }
 .scroll-up-btn{
     position: fixed;
@@ -198,9 +223,9 @@ section .title::after{
 /* home section styling */
 .home{
     display: flex;
-    background-color: #171717;
+    background: url("images/banner.png") no-repeat center;
     height: 100vh;
-    color: white;
+    color: #fff;
     min-height: 500px;
     background-size: cover;
     background-attachment: fixed;
