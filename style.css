@@ -35,6 +35,10 @@ section{
     padding: 0 80px;
     margin: auto;
 }
+.nav-max-width{
+    max-width: 1300px;
+    margin: auto;
+}
 .about, .projects, .skills, .teams, .contact, footer{
     font-family: 'Poppins', sans-serif;
 }
@@ -82,7 +86,7 @@ section .title::after{
     position: fixed;
     width: 100%;
     z-index: 999;
-    padding: 30px 0;
+    padding: 30px;
     font-family: 'Ubuntu', sans-serif;
     transition: all 0.3s ease;
 }
@@ -90,7 +94,7 @@ section .title::after{
     padding: 15px 0;
     background: crimson;
 }
-.navbar .max-width {
+.navbar .nav-max-width {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -123,16 +127,15 @@ section .title::after{
     counter-reset: item 0;
     z-index: 12;
 } */
-.navbar .logo {
+/* .navbar .logo {
     flex: 1;
-}
+} */
 .navbar .logo a {
     display: flex;
     align-items: center;
-    font-size: 20px;
 }
 .navbar .logo img {
-    width: 45px;
+    width: 55px;
 }
 .navbar .logo a span{
     color: crimson;
