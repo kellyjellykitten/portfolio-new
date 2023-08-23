@@ -196,28 +196,28 @@ section .title::after{
 
 
 /* home section styling */
-/* .home{
+.home{
     display: flex;
-    background: url("images/banner.jpg") no-repeat center;
+    background-color: #171717;
     height: 100vh;
-    color: black;
+    color: white;
     min-height: 500px;
     background-size: cover;
     background-attachment: fixed;
     font-family: 'Ubuntu', sans-serif;
-} */
-.home {
+}
+/* .home {
     display: flex;
     width: 100%;
     height: 100vh;
     background-color: #171717;
-    color: #000;
+    color: #ffffff;
     position: relative;
     font-family: 'Ubuntu', sans-serif;
     overflow: hidden;
     background-size: cover;
-}
-.lines {
+} */
+/* .lines {
     position: absolute;
     height: 100vh;
     width: 100%;
@@ -264,13 +264,13 @@ section .title::after{
     to {
         transform: translateY(110%);
     }
-}
+} */
 .home .max-width{
-  width: 100%;
-  display: flex;
+    width: 100%;
+    display: flex;
 }
 .home .max-width .row{
-  margin-right: 0;
+    margin-right: 0;
 }
 .home .home-content .text-1{
     font-size: 27px;
