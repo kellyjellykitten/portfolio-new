@@ -36,8 +36,9 @@ section{
     margin: auto;
 }
 .nav-max-width{
-    max-width: 1300px;
+    max-width: 100%;
     margin: auto;
+    padding: 0 80px;
 }
 .about, .projects, .skills, .teams, .contact, footer{
     font-family: 'Poppins', sans-serif;
