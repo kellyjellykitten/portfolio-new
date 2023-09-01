@@ -509,9 +509,6 @@ section .title::after{
     text-align: center;
     line-height: 50px;
 }
-.scene .left-zone .list li.item input[type=radio] ~ label:first-letter {
-    text-transform: uppercase;
-}
 .scene .left-zone .list li.item input[type=radio] ~ label:hover {
     opacity: 0.75;
     cursor: pointer;
@@ -578,9 +575,6 @@ section .title::after{
 }
 .scene .left-zone .list li.item input[type=radio] ~ .content.content_banana h1 {
     color: #F5D76E;
-}
-.scene .left-zone .list li.item input[type=radio] ~ .content h1:first-letter {
-    text-transform: uppercase;
 }
 .scene .left-zone .list li.item input[type=radio] ~ .content p {
     max-width: 50%;
