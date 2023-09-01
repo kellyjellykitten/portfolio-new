@@ -40,7 +40,7 @@ section{
     margin: auto;
     padding: 0 80px;
 }
-.about, .projects, .skills, .teams, .contact, footer{
+.about, .projects, .skills, .experience, .contact, footer{
     font-family: 'Poppins', sans-serif;
 }
 .about .about-content,
@@ -394,12 +394,12 @@ section .title::after{
 }
 
 /* projects section styling */
-.projects, .teams{
+.projects, .experience{
     color:#fff;
     background: #111;
 }
 .projects .title::before,
-.teams .title::before{
+.experience .title::before{
     background: #fff;
 }
 .projects .serv-content .card{
@@ -506,7 +506,7 @@ section .title::after{
 }
 
 /* experience section styling */
-.teams .carousel .card{
+.experience .carousel .card{
     background: #222;
     border-radius: 6px;
     padding: 25px 35px;
@@ -514,25 +514,25 @@ section .title::after{
     overflow: hidden;
     transition: all 0.3s ease;
 }
-.teams .carousel .card:hover{
+.experience .carousel .card:hover{
     background: crimson;
 }
-.teams .carousel .card .box{
+.experience .carousel .card .box{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     transition: all 0.3s ease;
 }
-.teams .carousel .card:hover .box{
+.experience .carousel .card:hover .box{
     transform: scale(1.05);
 }
-.teams .carousel .card .text{
+.experience .carousel .card .text{
     font-size: 25px;
     font-weight: 500;
     margin: 10px 0 7px 0;
 }
-.teams .carousel .card img{
+.experience .carousel .card img{
     height: 150px;
     width: 150px;
     object-fit: cover;
@@ -540,7 +540,7 @@ section .title::after{
     border: 5px solid crimson;
     transition: all 0.3s ease;
 }
-.teams .carousel .card:hover img{
+.experience .carousel .card:hover img{
     border-color: #fff;
 }
 .owl-dots{
