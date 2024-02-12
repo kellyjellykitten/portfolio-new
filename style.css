@@ -499,6 +499,14 @@ section .title::after{
     align-items: center;
     justify-content: left;
 }
+.scene .left-zone .list {
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+    flex-grow: 1;
+    margin: 0;
+    padding: 0;
+}
 .scene .left-zone .list li.item input[type=radio] {
     display: none;
 }
@@ -565,8 +573,9 @@ section .title::after{
     flex-direction: column;
 }
 .scene .left-zone .list li.item input[type=radio] ~ .content.content_wordingo .picto {
-    height: 100px;
-    width: 100px;
+    height: 230px;
+    width: 420px;
+    margin-bottom: 20px;
     background-image: url("https://media.giphy.com/media/krUBihK8QinVNsiVtU/giphy.gif");
     background-position: center;
     background-size: cover;
@@ -587,8 +596,9 @@ section .title::after{
     color: #F5D76E;
 }
 .scene .left-zone .list li.item input[type=radio] ~ .content.content_pathfinder .picto {
-    height: 100px;
-    width: 100px;
+    height: 230px;
+    width: 420px;
+    margin-bottom: 20px;
     background-image: url("images/pathfinder.gif");
     background-position: center;
     background-size: cover;
@@ -609,7 +619,7 @@ section .title::after{
     color: #243385;
 }
 .scene .left-zone .list li.item input[type=radio] ~ .content p {
-    max-width: 50%;
+    max-width: 85%;
     text-align: center;
     color: black;
 }
