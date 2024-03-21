@@ -223,7 +223,7 @@ section .title::after{
 .about .about-content .right{
     width: 55%;
     border-radius: 15px;
-    box-shadow: 0 0 50px 15px rgb(49, 40, 112);
+    box-shadow: 0 0 20px 10px rgb(43, 23, 82);
     background-color: rgb(29, 24, 54);
     padding: 15px 30px;
 }
