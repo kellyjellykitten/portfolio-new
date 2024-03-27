@@ -317,8 +317,8 @@ section .title::after{
     padding: 1.25rem;
 }
 .projects .square{
-    background: rgba(223, 224, 230, 0.33);
-    border-radius: 6px;
+    background: rgb(21, 16, 48);
+    border-radius: 8px;
     padding: 1.5rem;
     max-width: 325px;
     width: 100%;
@@ -358,7 +358,7 @@ section .title::after{
     padding-inline-end: 0.25rem;
 }
 .projects .stack p{
-    color: red;
+    color: rgb(118, 112, 126);
     text-transform: uppercase;
     font-weight: 800;
     font-size: 0.875rem;
@@ -374,8 +374,8 @@ section .title::after{
 .projects .headline h2{
     line-height: 1.2;
     font-weight: 700;
-    font-size: 1.5rem;
-    color: white;
+    font-size: 24px;
+    color: rgb(255, 255, 255);
     margin: 0px;
 }
 .projects .space{
@@ -405,6 +405,9 @@ section .title::after{
     padding-inline-end: 0.75rem;
     padding: 0px;
     cursor: pointer;
+}
+.projects .gitbutton:hover{
+    background-color: rgba(157, 236, 249, 0.12);
 }
 .projects .libraries{
     margin-top: 0.5rem;
@@ -467,11 +470,30 @@ section .title::after{
     margin-top: 0.5rem;
     margin-inline: 0px;
     margin-bottom: 0px;
-    color: #6b9adf;
+    color: rgb(170, 166, 195);
     background: none;
     text-transform: none;
     font-weight: 300;
     letter-spacing: 0px;
+}
+.projects .site-link{
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    background-color: rgb(5, 8, 22);
+    border-radius: 8px;
+    margin-top: .75rem;
+    cursor: pointer;
+    font-family: inherit;
+    border: none;
+    font-size: 100%;
+}
+.projects .site-link:hover{
+    background-color: rgb(170, 166, 195);
+    color: rgb(18, 5, 41)
 }
 
 
