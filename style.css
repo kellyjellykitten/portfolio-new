@@ -298,13 +298,22 @@ section .title::after{
     margin: 10px 0 7px 0;
 } */
 
-.projects .wrap{
-    margin-top: 0px;
-    margin-inline: 0px;
-    margin-bottom: 0px;
-    overflow: hidden;
+.projects .card-lists{
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
 }
-.projects .list ul{
+.projects .card-item {
+    display: flex;
+    width: 100%;
+}
+.projects .card-item-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 1rem;
+}
+/* .projects .list ul{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -323,9 +332,10 @@ section .title::after{
     max-width: 325px;
     width: 100%;
     margin-bottom: 0.75rem;
+    margin-right: 2rem;
     overflow: hidden;
-}
-.projects .preview{
+} */
+.projects .card-item-content .preview{
     height: 175px;
     background: #EDF2F7;
     margin-top: 0px;
@@ -335,20 +345,20 @@ section .title::after{
     position: relative;
     overflow: hidden;
 }
-.projects a{
+.projects .card-item-content .preview a{
     cursor: pointer;
     text-decoration: none;
     outline: transparent solid 2px;
     outline-offset: 2px;
 }
-.projects .preview img{
+.projects .card-item-content .preview img{
     object-fit: cover;
     border-radius: 1rem;
     height: 175px;
     width: 100%;
     transition: all 0.3s ease-in-out 0s;
 }
-.projects .preview img:hover{
+.projects .card-item-content .preview img:hover{
     transform: scale(1.1);
 }
 .projects .stack{
