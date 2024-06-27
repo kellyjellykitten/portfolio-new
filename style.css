@@ -323,6 +323,7 @@ section .title::after{
     max-width: 325px;
     width: 100%;
     margin-bottom: 0.75rem;
+    margin-right: 2rem;
     overflow: hidden;
 }
 .projects .preview{
