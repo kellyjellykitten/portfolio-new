@@ -297,77 +297,27 @@ section .title::after{
     font-weight: 500;
     margin: 10px 0 7px 0;
 } */
+.projects .container {
+    display: flex;
+    max-width: 1150px;
+    margin: 0 auto;
+    padding: 0 30px;
+    column-gap: 20px;
+    flex-wrap: wrap;
+}
 
-.projects .card-lists{
-    display: flex;
-    flex-wrap: wrap;
-    margin: auto;
-}
-.projects .card-item {
-    display: flex;
-    width: 100%;
-}
-.projects .card-item-content {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    margin: 1rem;
-}
-/* .projects .list ul{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    list-style-type: none;
-    padding: 0px;
-}
-.projects .list li{
-    display: flex;
-    align-items: flex-start;
-    padding: 1.25rem;
-}
-.projects .square{
+.projects .card {
     background: rgb(21, 16, 48);
     border-radius: 8px;
     padding: 1.5rem;
     max-width: 325px;
     width: 100%;
-    margin-bottom: 0.75rem;
-    margin-right: 2rem;
     overflow: hidden;
-} */
-.projects .card-item-content .preview{
-    height: 175px;
-    background: #EDF2F7;
-    margin-top: 0px;
-    margin-inline: 0px;
-    border-radius: 1rem;
-    margin-bottom: 1.5rem;
-    position: relative;
-    overflow: hidden;
-}
-.projects .card-item-content .preview a{
-    cursor: pointer;
-    text-decoration: none;
-    outline: transparent solid 2px;
-    outline-offset: 2px;
-}
-.projects .card-item-content .preview img{
-    object-fit: cover;
-    border-radius: 1rem;
-    height: 175px;
-    width: 100%;
-    transition: all 0.3s ease-in-out 0s;
-}
-.projects .card-item-content .preview img:hover{
-    transform: scale(1.1);
-}
-.projects .stack{
     display: flex;
     flex-direction: column;
-    padding-inline-start: 0.25rem;
-    padding-inline-end: 0.25rem;
 }
-.projects .stack p{
+
+.projects .card-type {
     color: rgb(118, 112, 126);
     text-transform: uppercase;
     font-weight: 800;
@@ -375,40 +325,58 @@ section .title::after{
     letter-spacing: 1.1px;
     margin: 0px;
 }
-.projects .headline{
+
+.projects .img {
+    height: 175px;
+    background: #EDF2F7;
+    margin-top: 0px;
+    margin-inline: 0px;
+    border-radius: 1rem;
+    margin-bottom: 1.5rem;
+    position: relative;
+    object-fit: cover;
+}
+
+.projects .img:hover {
+    transform: scale(1.1);
+}
+
+.projects .headline {
     margin-top: 0.5rem;
     margin-inline: 0px;
     margin-bottom: 0px;
     display: flex;
 }
-.projects .headline h2{
+.projects .headline h2 {
     line-height: 1.2;
     font-weight: 700;
     font-size: 24px;
-    color: rgb(255, 255, 255);
+    color:rgb(255, 255, 255);
     margin: 0px;
 }
-.projects .space{
+
+.projects .space {
     flex: 1 1 0%;
     place-self: stretch;
 }
-.projects .gitbox{
+
+.projects .gitbox {
     display: flex;
     align-items: center;
     flex-direction: row;
-    -webkit-box-align: center;
 }
-.projects .gitbutton{
+
+.projects .gitbutton {
     display: inline-flex;
     align-items: center;
     justify-content: center;
     position: relative;
     vertical-align: middle;
-    border-radius: 0.4rem;
-    border: 1px solid;
+    border-radius: 0.5rem;
+    border: 1 px solid;
     border-color: #9DECF9;
     color: #9DECF9;
-    background:transparent;
+    background: transparent;
     height: 2rem;
     min-width: 2rem;
     padding-inline-start: 0.75rem;
@@ -416,19 +384,20 @@ section .title::after{
     padding: 0px;
     cursor: pointer;
 }
-.projects .gitbutton:hover{
+
+.projects .gitbutton:hover {
     background-color: rgba(157, 236, 249, 0.12);
 }
-.projects .libraries{
+
+.projects .libraries {
     margin-top: 0.5rem;
     margin-inline: 0px;
     margin-bottom: 0px;
     display: flex;
     flex-direction: row;
-    -webkit-box-align: center;
     align-items: center;
 }
-.projects .library{
+/* .library{
     display: inline-block;
     vertical-align: middle;
     padding-inline-start: 0.25rem;
@@ -436,7 +405,7 @@ section .title::after{
     font-size: 0.75rem;
     border-radius: 0.15rem;
     font-weight: 700;
-}
+} */
 .projects .library-vue{
     display: inline-block;
     vertical-align: middle;
@@ -448,7 +417,7 @@ section .title::after{
     background: rgba(129, 230, 217, 0.16);
     color: #81E6D9;
 }
-.projects .library-javascript{
+.projects .library-javascript {
     display: inline-block;
     vertical-align: middle;
     padding-inline-start: 0.25rem;
@@ -462,7 +431,7 @@ section .title::after{
     background: rgba(154, 230, 180, 0.16);
     color: #9AE6B4;
 }
-.projects .library-postgres{
+.projects .library-postgres {
     display: inline-block;
     vertical-align: middle;
     padding-inline-start: 0.25rem;
@@ -476,7 +445,8 @@ section .title::after{
     background: rgba(251, 211, 141, 0.16);
     color: #FBD38D;
 }
-.projects .stack .text-box{
+
+.projects .description {
     margin-top: 0.5rem;
     margin-inline: 0px;
     margin-bottom: 0px;
@@ -485,25 +455,34 @@ section .title::after{
     text-transform: none;
     font-weight: 300;
     letter-spacing: 0px;
+    font-size: 0.875rem;
+    padding-bottom: 1rem;
 }
-.projects .site-link{
+
+.projects .site-link {
     color: rgb(255, 255, 255);
     font-weight: 500;
-    padding-top: .5rem;
-    padding-bottom: .5rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding: 0.5rem 1rem;
     background-color: rgb(5, 8, 22);
     border-radius: 8px;
-    margin-top: .75rem;
+    margin-top: auto;
     cursor: pointer;
     font-family: inherit;
     border: none;
     font-size: 100%;
 }
-.projects .site-link:hover{
+
+.projects .site-link:hover {
     background-color: rgb(170, 166, 195);
     color: rgb(18, 5, 41)
+}
+
+@media only screen and (max-width: 1080px) {
+    .projects .card { 
+        display: block;
+        width: 100%;
+        margin-top: 0.5rem;
+    }
 }
 
 
