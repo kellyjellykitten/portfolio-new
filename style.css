@@ -485,7 +485,6 @@ section .title::after{
     }
 }
 
-
 /* Testing mp4/gif as background */
 video {
     position: absolute;
@@ -501,24 +500,61 @@ video {
 .skills .col {
     flex: 1;
     padding: 16px;
-    text-align: center;
+    
 }
-.skills .category{
-    font-size: 25px;
+.skills .category {
+    font-size: 1.6em;
     font-weight: 600;
     color: rgb(189, 233, 193);
     text-decoration: underline 2px rgb(122, 121, 121);
+    margin-bottom: 15px;
+    
+}
+.skills p {
+    font-size: 1.3em;
     margin-bottom: 10px;
 }
-.skills p{
-    text-align: justify;
+.skills ul {
+    margin-bottom: 10px;
+    text-align: left;
+    margin-left: 15px;
 }
-.skills .info{
-    display: flex;
-    font-size: 18px;
-    margin-bottom: 5px;
-    justify-content: center;
+.skills ul li {
+    font-size: 1.2em;
+}
+.skills .popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    user-select: none;
+}
+.skills .popup .popuptext {
+    visibility: hidden;
+    width: 160px;
+    background-color: #555;
+    color: #fff;
     text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -80px;
+}
+.skills .popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+.skills .popup .show {
+    visibility: visible;
+    animation: fadeIn 1s;
 }
 
 /* experience section styling */

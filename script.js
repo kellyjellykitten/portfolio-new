@@ -66,4 +66,10 @@ $(document).ready(function(){
             }
         }
     });
+
+    //aws skills popup
+    const openSkills = () => {
+        var popup = document.getElementById("skillsPopup");
+        popup.classList.toggle("show")
+    }
 });
