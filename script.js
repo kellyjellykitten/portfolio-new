@@ -66,10 +66,24 @@ $(document).ready(function(){
             }
         }
     });
-
-    //aws skills popup
-    const openSkills = () => {
-        var popup = document.getElementById("skillsPopup");
-        popup.classList.toggle("show")
-    }
 });
+
+//AWS skills dropdown
+//When user clicks button, toggle b/w hiding & showing the dropdown content
+const openSkills = () => {
+    console.log("clicked toggle")
+    document.getElementById("skillsDropdown").classList.toggle("show");
+}
+//Close dropdown if user clicks outside of it
+window.onclick = function(event) {
+    if (!event.target.matches('.dropbtn')) {
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+            }
+        }
+    }
+}

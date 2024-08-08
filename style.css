@@ -500,7 +500,7 @@ video {
 .skills .col {
     flex: 1;
     padding: 16px;
-    
+    text-align: center;
 }
 .skills .category {
     font-size: 1.6em;
@@ -508,7 +508,6 @@ video {
     color: rgb(189, 233, 193);
     text-decoration: underline 2px rgb(122, 121, 121);
     margin-bottom: 15px;
-    
 }
 .skills p {
     font-size: 1.3em;
@@ -522,39 +521,32 @@ video {
 .skills ul li {
     font-size: 1.2em;
 }
-.skills .popup {
+.skills .dropbtn {
+    background-color: #3498DB;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+.skills .dropbtn:hover, .dropbtn:focus {
+    background-color: #2980B9;
+}
+.skills .dropdown {
     position: relative;
     display: inline-block;
-    cursor: pointer;
-    user-select: none;
 }
-.skills .popup .popuptext {
-    visibility: hidden;
-    width: 160px;
-    background-color: #555;
-    color: #fff;
-    text-align: center;
-    border-radius: 6px;
-    padding: 8px 0;
+.skills .dropdown-content {
+    display: none;
     position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
-    bottom: 125%;
-    left: 50%;
-    margin-left: -80px;
 }
-.skills .popup .popuptext::after {
-    content: "";
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    margin-left: -5px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: #555 transparent transparent transparent;
-}
-.skills .popup .show {
-    visibility: visible;
-    animation: fadeIn 1s;
+.skills .show {
+    display: block;
 }
 
 /* experience section styling */
