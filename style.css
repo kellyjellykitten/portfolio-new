@@ -513,6 +513,9 @@ video {
     font-size: 1.3em;
     margin-bottom: 10px;
 }
+.skills p.accordian {
+    font-size: 1.1em;
+}
 .skills ul {
     margin-bottom: 10px;
     text-align: left;
@@ -520,6 +523,14 @@ video {
 }
 .skills ul li {
     font-size: 1.2em;
+}
+.skills details {
+    border: 1px solid #8e8e8e;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+.skills summary {
+    font-size: 1.3em;
 }
 .skills .dropbtn {
     background-color: #3498DB;
@@ -558,61 +569,9 @@ video {
     overflow: hidden;
     transition: all 0.3s ease;
 }
-.experience .carousel .card:hover{
-    background: crimson;
-}
-.experience .carousel .card .box{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.3s ease;
-}
-.experience .carousel .card:hover .box{
-    transform: scale(1.05);
-}
-.experience .carousel .card .text{
-    font-size: 25px;
-    font-weight: 500;
-    margin: 10px 0 7px 0;
-}
-.experience .carousel .card img{
-    height: 150px;
-    width: 150px;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 5px solid crimson;
-    transition: all 0.3s ease;
-}
-.experience .carousel .card:hover img{
-    border-color: #fff;
-}
-.owl-dots{
-    text-align: center;
-    margin-top: 20px;
-}
-.owl-dot{
-    height: 13px;
-    width: 13px;
-    margin: 0 5px;
-    outline: none!important;
-    border-radius: 50%;
-    border: 2px solid crimson!important;
-    transition: all 0.3s ease;
-}
-.owl-dot.active{
-    width: 35px;
-    border-radius: 14px;
-}
-.owl-dot.active,
-.owl-dot:hover{
-    background: crimson!important;
-}
+
 
 /* contact section styling */
-.contact .title::after{
-    content: "Get in touch";
-}
 .contact .contact-content .column{
     width: calc(50% - 30px);
 }
