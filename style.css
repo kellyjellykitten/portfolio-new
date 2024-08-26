@@ -61,26 +61,6 @@ section .title{
     padding-bottom: 20px;
     font-family: 'Ubuntu', sans-serif;
 }
-section .title::before{
-    content: "";
-    position: absolute;
-    bottom: 0px;
-    left: 50%;
-    width: 180px;
-    height: 3px;
-    background: #111;
-    transform: translateX(-50%);
-}
-section .title::after{
-    position: absolute;
-    bottom: -8px;
-    left: 50%;
-    font-size: 20px;
-    color: crimson;
-    padding: 0 5px;
-    background: #fff;
-    transform: translateX(-50%);
-}
 
 /* navbar styling */
 .navbar {
@@ -119,7 +99,7 @@ section .title::after{
     color: #fff;
 }
 
-/* menu btn styling */
+/* menu button styling */
 .menu-btn{
     color: #fff;
     font-size: 23px;
@@ -266,37 +246,6 @@ section .title::after{
 .experience .title::before{
     background: rgb(5 8 22);
 } 
-/* .projects .serv-content .card{
-    width: calc(33% - 20px);
-    background: #222;
-    text-align: center;
-    border-radius: 6px;
-    padding: 50px 25px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-.projects .serv-content .card:hover{
-    background: crimson;
-}
-.projects .serv-content .card .box{
-    transition: all 0.3s ease;
-}
-.projects .serv-content .card:hover .box{
-    transform: scale(1.05);
-}
-.projects .serv-content .card i{
-    font-size: 50px;
-    color: crimson;
-    transition: color 0.3s ease;
-}
-.projects .serv-content .card:hover i{
-    color: #fff;
-}
-.projects .serv-content .card .text{
-    font-size: 25px;
-    font-weight: 500;
-    margin: 10px 0 7px 0;
-} */
 .projects .container {
     display: flex;
     max-width: 1150px;
@@ -305,7 +254,6 @@ section .title::after{
     column-gap: 20px;
     flex-wrap: wrap;
 }
-
 .projects .card {
     background: rgb(21, 16, 48);
     border-radius: 8px;
@@ -316,7 +264,6 @@ section .title::after{
     display: flex;
     flex-direction: column;
 }
-
 .projects .card-type {
     color: rgb(118, 112, 126);
     text-transform: uppercase;
@@ -325,7 +272,6 @@ section .title::after{
     letter-spacing: 1.1px;
     margin: 0px;
 }
-
 .projects .img {
     height: 175px;
     background: #EDF2F7;
@@ -336,11 +282,9 @@ section .title::after{
     position: relative;
     object-fit: cover;
 }
-
 .projects .img:hover {
     transform: scale(1.1);
 }
-
 .projects .headline {
     margin-top: 0.5rem;
     margin-inline: 0px;
@@ -354,18 +298,15 @@ section .title::after{
     color:rgb(255, 255, 255);
     margin: 0px;
 }
-
 .projects .space {
     flex: 1 1 0%;
     place-self: stretch;
 }
-
 .projects .gitbox {
     display: flex;
     align-items: center;
     flex-direction: row;
 }
-
 .projects .gitbutton {
     display: inline-flex;
     align-items: center;
@@ -384,11 +325,9 @@ section .title::after{
     padding: 0px;
     cursor: pointer;
 }
-
 .projects .gitbutton:hover {
     background-color: rgba(157, 236, 249, 0.12);
 }
-
 .projects .libraries {
     margin-top: 0.5rem;
     margin-inline: 0px;
@@ -445,7 +384,6 @@ section .title::after{
     background: rgba(251, 211, 141, 0.16);
     color: #FBD38D;
 }
-
 .projects .description {
     margin-top: 0.5rem;
     margin-inline: 0px;
@@ -458,7 +396,6 @@ section .title::after{
     font-size: 0.875rem;
     padding-bottom: 1rem;
 }
-
 .projects .site-link {
     color: rgb(255, 255, 255);
     font-weight: 500;
@@ -471,7 +408,6 @@ section .title::after{
     border: none;
     font-size: 100%;
 }
-
 .projects .site-link:hover {
     background-color: rgb(170, 166, 195);
     color: rgb(18, 5, 41)
@@ -496,22 +432,39 @@ video {
 .skills .col-container {
     display: flex;
     width: 100%;
+    margin-inline: auto;
+    max-width: 70rem;
+    padding-inline-start: 1rem;
+    padding-inline-end: 1rem;
+    padding: 6.5px;
 }
 .skills .col {
     flex: 1;
-    padding: 16px;
-    text-align: center;
+    padding: 1.5rem;
+    background: rgba(21, 16, 48, 0.4);
+    border-radius: 0.75rem;
+    box-shadow: 0px 0px 10px 5px rgb(94, 63, 117, 0.25);
 }
 .skills .category {
-    font-size: 1.6em;
-    font-weight: 600;
-    color: rgb(189, 233, 193);
-    text-decoration: underline 2px rgb(122, 121, 121);
-    margin-bottom: 15px;
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    line-height: 1.35;
+}
+.skills .skill-name {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 0.25rem;
+}
+.skills .logo {
+    display: inline-block;
 }
 .skills p {
-    font-size: 1.3em;
+    font-size: 1rem;
     margin-bottom: 10px;
+    margin-inline-start: 0.75rem;
+    letter-spacing: 0.5px;
 }
 .skills p.accordian {
     font-size: 1.1em;
@@ -525,7 +478,6 @@ video {
     font-size: 1.2em;
 }
 .skills details {
-    border: 1px solid #8e8e8e;
     border-radius: 4px;
     margin-bottom: 10px;
 }
