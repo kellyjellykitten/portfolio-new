@@ -57,7 +57,7 @@ section .title{
     text-align: center;
     font-size: 40px;
     font-weight: 500;
-    margin-bottom: 60px;
+    margin-bottom: 50px;
     padding-bottom: 20px;
 }
 
@@ -73,13 +73,11 @@ section .title{
     padding: 15px 0;
     background: rgb(0, 0, 0);
 }
-.navbar .max-width {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.navbar .menu {
+    list-style: none;
+    text-align: center;
 }
 .navbar .menu li {
-    list-style: none;
     display: inline-block;
 }
 .navbar .menu li a {
@@ -87,11 +85,11 @@ section .title{
     color: #fff;
     font-size: 18px;
     font-weight: 500;
-    margin-left: 25px;
+    margin-left: 35px;
     transition: color 0.3s ease;
 }
 .navbar .menu li a:hover {
-    color: crimson;
+    color: rgb(129, 58, 245);
 }
 .navbar.sticky .menu li a:hover {
     color: #fff;
@@ -132,17 +130,6 @@ section .title{
     filter: brightness(90%);
 }
 
-/* .home{
-    display: flex;
-    background: url("images/banner.png") no-repeat center;
-    height: 100vh;
-    color: #fff;
-    min-height: 500px;
-    background-size: cover;
-    background-attachment: fixed;
-    font-family: 'Ubuntu', sans-serif;
-} */
-
 /* home section styling */
 .home{
     width: 100%;
@@ -150,14 +137,12 @@ section .title{
     position: relative;
     padding: 0;
 }
-
 .home video {
     width: 100%;
     height: 100%;
     object-fit: cover;
     display: flex;
 }
-
 .home .home-content {
     position: absolute;
     bottom: 28%;
@@ -180,49 +165,25 @@ section .title{
     font-size: 2.5rem;
     font-weight: 500;
 }
-/* .home .max-width{
-    width: 100%;
-    display: flex;
-}
-.home .max-width .row{
-    margin-right: 0;
-}
-.home .home-content .text-1{
-    font-size: 27px;
-}
-.home .home-content .text-2{
-    font-size: 75px;
-    font-weight: 600;
-    margin-left: -3px;
-}
-.home .home-content .text-3{
-    font-size: 40px;
-    margin: 5px 0;
-}
-.home .home-content .text-3 span{
-    color: crimson;
-    font-weight: 500;
-} */
 .home .home-content a{
     display: inline-block;
-    background: crimson;
+    background: rgb(47, 16, 129);
     color: #fff;
     font-size: 20px;
     padding: 12px 36px;
     margin-top: 60px;
     font-weight: 400;
     border-radius: 6px;
-    border: 2px solid crimson;
     transition: all 0.3s ease;
 }
 .home .home-content a:hover{
-    color: crimson;
-    background: none;
+    color: #fff;
+    background: rgb(65, 23, 182);
 } 
 
 /* about section styling */
 .about {
-    background: rgb(5 8 22);
+    background: rgb(5, 8, 22);
     color: rgb(243, 243, 243);
 }
 .about .about-content .left{
@@ -284,7 +245,7 @@ section .title{
     max-width: 1150px;
     margin: 0 auto;
     padding: 0 30px;
-    column-gap: 20px;
+    column-gap: 40px;
     flex-wrap: wrap;
 }
 .projects .card {
@@ -463,6 +424,7 @@ section .title{
     padding-inline-start: 1rem;
     padding-inline-end: 1rem;
     padding: 6.5px;
+    column-gap: 25px;
 }
 .skills .col {
     flex: 1;
@@ -472,28 +434,27 @@ section .title{
     box-shadow: 0px 0px 10px 5px rgb(94, 63, 117, 0.25);
 }
 .skills .category {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     font-weight: 700;
-    margin-bottom: 0.5rem;
+    margin-bottom: 1.3rem;
     line-height: 1.35;
 }
 .skills .skill-name {
     display: flex;
     align-items: center;
     flex-direction: row;
-    margin-top: 0.25rem;
+    margin-top: 0.75rem;
 }
 .skills .logo {
     display: inline-block;
 }
 .skills p {
-    font-size: 1rem;
-    margin-bottom: 10px;
+    font-size: 1.1rem;
     margin-inline-start: 0.75rem;
     letter-spacing: 0.5px;
 }
 .skills p.accordian {
-    font-size: 1.1em;
+    font-size: 1.1rem;
 }
 .skills ul {
     margin-bottom: 10px;
@@ -539,15 +500,43 @@ section .title{
 }
 
 /* experience section styling */
-.experience .carousel .card{
-    background: #222;
-    border-radius: 6px;
-    padding: 25px 35px;
-    text-align: center;
-    overflow: hidden;
-    transition: all 0.3s ease;
+.experience .col-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-inline: auto;
+    max-width: 50rem;
+    padding-inline-start: 1rem;
+    padding-inline-end: 1rem;
+    padding: 6.5px;
 }
-
+.experience .col {
+    flex: 1;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    background: rgba(21, 16, 48, 0.4);
+    border-radius: 0.75rem;
+    box-shadow: 0px 0px 10px 5px rgb(94, 63, 117, 0.25);
+}
+.experience h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.experience h3 {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+.experience h4 {
+    font-size: 1rem;
+    font-weight: 400;
+}
+.experience ul {
+    margin-left: 2rem;
+    margin-top: 1.3rem;
+}
+.experience li {
+    padding-bottom: .5rem;
+}
 
 /* contact section styling */
 .contact .contact-content .column{
@@ -622,19 +611,19 @@ section .title{
     align-items: center;
 }
 .right form .button-area button{
-  color: #fff;
-  display: block;
-  width: 160px!important;
-  height: 45px;
-  outline: none;
-  font-size: 18px;
-  font-weight: 500;
-  border-radius: 6px;
-  cursor: pointer;
-  flex-wrap: nowrap;
-  background: crimson;
-  border: 2px solid crimson;
-  transition: all 0.3s ease;
+    color: #fff;
+    display: block;
+    width: 160px!important;
+    height: 45px;
+    outline: none;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 6px;
+    cursor: pointer;
+    flex-wrap: nowrap;
+    background: crimson;
+    border: 2px solid crimson;
+    transition: all 0.3s ease;
 }
 .right form .button-area button:hover{
     color: crimson;

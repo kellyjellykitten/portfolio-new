@@ -17,19 +17,17 @@
         <i class="fas fa-angle-up"></i>
     </div>
     <nav class="navbar">
-        <div class="max-width">
-            <ul class="menu">
-                <li><a href="#home" class="menu-btn">Home</a></li>
-                <li><a href="#about" class="menu-btn">About</a></li>
-                <li><a href="#projects" class="menu-btn">Projects</a></li>
-                <li><a href="#skills" class="menu-btn">Skills</a></li>
-                <li><a href="#experience" class="menu-btn">Experience</a></li>
-                <li><a href="#contact" class="menu-btn">Contact</a></li>
-            </ul>
-            <div class="menu-btn">
-                <i class="fas fa-bars"></i>
-            </div>
-        </div>
+        <ul class="menu">
+            <li><a href="#home" class="menu-btn">Home</a></li>
+            <li><a href="#about" class="menu-btn">About</a></li>
+            <li><a href="#projects" class="menu-btn">Projects</a></li>
+            <li><a href="#skills" class="menu-btn">Skills</a></li>
+            <li><a href="#experience" class="menu-btn">Experience</a></li>
+            <li><a href="#contact" class="menu-btn">Contact</a></li>
+        </ul>
+        <div class="menu-btn">
+            <i class="fas fa-bars"></i>
+        </div>    
     </nav>
 
     <!-- home section start -->
@@ -39,14 +37,14 @@
             <h1>Hello! My name is</h1>
             <h2>Kelly Lloyd</h2>
             <h3>and I'm a frontend software developer</h3>
-            <a href="#about">scroll down/about me</a>
+            <a href="#about">About me</a>
         </div>  
     </section>
 
     <!-- about section start -->
     <section class="about" id="about">
         <div class="max-width">
-            <h2 class="title">About me</h2>
+            <h1 class="title">About me</h1>
             <div class="about-content">
                 <div class="column left">
                     <img src="images/profile-1.png" alt="Photo of me">
@@ -64,7 +62,7 @@
     <!-- Projects section start -->
     <section class="projects" id="projects">
         <div class="max-width">
-            <h2 class="title">Projects</h2>
+            <h1 class="title">Projects</h1>
             <div class="container">
                 <div class="card">
                   <img class="img" src="./images/wordingo.gif" alt="Project preview">
@@ -145,32 +143,64 @@
     <!-- skills section start -->
     <section class="skills" id="skills">
         <div class="max-width">
-            <h2 class="title">Skills</h2>
+            <h1 class="title">Skills</h1>
             <div class="col-container">
                 <div class="col">
-                    <div class="category">Languages</div>
-                        <div class="skill-name">
-                            <img src="images/logos/javascript.svg" class="logo" alt="JavaScript logo">
-                            <p>JavaScript</p>
-                        </div>
-                    
+                <div class="category">Languages</div>
+                <div class="skill-name">
+                    <img src="images/logos/javascript.svg" class="logo" alt="JavaScript logo">
+                    <p>JavaScript</p>
+                </div>
+                <div class="skill-name">
+                    <img src="images/logos/html.svg" class="logo" alt="HTML logo">
                     <p>HTML</p>
+                </div>
+                <div class="skill-name">
+                    <img src="images/logos/css.svg" class="logo" alt="CSS logo">
                     <p>CSS</p>
+                </div>
+                <div class="skill-name">
+                    <img src="images/logos/python.svg" class="logo" alt="Python logo">
                     <p>Python</p>
+                </div>   
                 </div>
                 <div class="col">
                     <div class="category">Frontend</div>
-                    <p>Vue</p>
-                    <p>React</p>
-                    <p>Bootstrap</p>
-                    <p>Tailwind</p>
-                    <p>Vite</p>
+                    <div class="skill-name">
+                        <img src="images/logos/vue.svg" class="logo" alt="Vue logo">
+                        <p>Vue</p>
+                    </div>
+                    <div class="skill-name">
+                        <img src="images/logos/react.svg" class="logo" alt="React logo">
+                        <p>React</p>
+                    </div>
+                    <div class="skill-name">
+                        <img src="images/logos/bootstrap.svg" class="logo" alt="Bootstrap logo">
+                        <p>Bootstrap</p>
+                    </div>
+                    <div class="skill-name">
+                        <img src="images/logos/tailwind.svg" class="logo" alt="Tailwind CSS logo">
+                        <p>Tailwind CSS</p>
+                    </div>
+                    <div class="skill-name">
+                        <img src="images/logos/vitejs.svg" class="logo" alt="Vite logo">
+                        <p>Vite</p>
+                    </div>
                 </div>   
                 <div class="col">
                     <div class="category">Backend</div>
-                    <p>Node.js</p>
-                    <p>Express</p>
-                    <p>PostgreSQL</p> 
+                    <div class="skill-name">
+                        <img src="images/logos/nodejs.svg" class="logo" alt="Node.js logo">
+                        <p>Node.js</p>
+                    </div>
+                    <div class="skill-name">
+                        <img src="images/logos/express.svg" class="logo" alt="Express logo">
+                        <p>Express</p>
+                    </div>
+                    <div class="skill-name">
+                        <img src="images/logos/postgresql.svg" class="logo" alt="PostgreSQL logo">
+                        <p>PostgreSQL</p>
+                    </div>
                 </div>
                 <div class="col">
                     <div class="category">Other tools</div>
@@ -181,19 +211,18 @@
                         <p class="accordian">CloudFront</p>
                         <p class="accordian">Certificate Manager</p>
                     </details>
-                    <!-- <p>AWS</p>
-                    <div class="dropdown">
-                        <button onclick="openSkills()"><i class="fa-solid fa-caret-down" style="color: #63E6BE;"></i></button>
-                        <div id="skillsDropdown" class="dropdown-content">
-                            <p>S3</p>
-                            <p>Route 53</p>
-                            <p>CloudFront</p>
-                            <p>Certificate Manager</p>
-                        </div>
-                    </div> -->
-                    <p>Git</p>
-                    <p>Postman</p>
-                    <p>GitHub</p>
+                    <div class="skill-name">
+                        <img src="images/logos/git.svg" class="logo" alt="Git logo">
+                        <p>Git</p>
+                    </div>
+                    <div class="skill-name">
+                        <img src="images/logos/postman.svg" class="logo" alt="Postman logo">
+                        <p>Postman</p>
+                    </div>
+                    <div class="skill-name">
+                        <img src="images/logos/github.svg" class="logo" alt="GitHub logo">
+                        <p>GitHub</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -202,14 +231,41 @@
     <!-- experience section start -->
     <section class="experience" id="experience">
         <div class="max-width">
-            <h2 class="title">Experience</h2>
+            <h1 class="title">Experience</h1>
             <div class="col-container">
                 <div class="col">
-                    <div class="category">Languages</div>
-                    <p>JavaScript</p>
-                    <p>HTML</p>
-                    <p>CSS</p>
-                    <p>Python</p>
+                    <h2>Web Developer</h2>
+                    <h3>University of Florida, College of Education</h3>
+                    <h4>Feb 2023 - Sep 2023</h4>
+                    <ul>
+                        <li>Worked as a frontend web developer in an agile team building and maintaining WordPress sites for the College of Education.</li>
+                        <li>Engaged in weekly dev meetings, giving input on the team’s agenda, time estimates, and technical specifics for the current tasks.</li>
+                        <li>Built and updated web pages for clients based on their requirements in collaboration with other developers and team leads.</li>
+                        <li>Gained experience working on a variety of website elements, including user input forms, structured data presentation, and embedded multimedia across more than 50 pages.</li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h2>Title Closing Processor & Licensed Title Agent</h2>
+                    <h3>Florida Title & Guarantee Agency</h3>
+                    <h4>Sep 2019 - Jun 2020</h4>
+                    <ul>
+                        <li>Opened files for each new transaction, cash or finance, ordering both title and municipal lien searches.</li>
+                        <li>Worked as part of a team consisting of both in-person co-workers and remote co-workers.</li>
+                        <li>Examined title of subject properties and worked on clearing every closing requirement needed for each, including titles to properties in probate, properties with open permits/city liens, and other complex situations.</li>
+                        <li>Assisted and facilitated real estate closings.</li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h2>Legal Assistant</h2>
+                    <h3>Gainesville Title, PLLC, A Law Firm</h3>
+                    <h4>Jun 2018 - Jul 2019</h4>
+                    <ul>
+                        <li>Designed and implemented a company workflow using Trello that greatly increased efficiency in the handling of files.</li>
+                        <li>Managed and maintained said workflow and was instrumental in the day-to-day operations of the firm.</li>
+                        <li>Reviewed real estate closing contracts and created the file in our software, including ordering title search.</li>
+                        <li>Cleared title deficiencies, including ordering estoppel letters, payoff statements, and surveys.</li>
+                        <li>Recorded warranty deeds, affidavits, mortgages, etc. in the Official Records through e-file.</li>
+                    </ul>
                 </div>
             </div>
         </div>
