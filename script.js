@@ -32,12 +32,6 @@ $(document).ready(function(){
         $('.navbar .menu').toggleClass("active");
         $('.menu-btn i').toggleClass("active");
     });
-
-    // typing text animation script
-    var typed = new Typed(".typing", {
-        strings: ["front-end web developer."],
-        typeSpeed: 100,
-    });
 });
 
 //AWS skills dropdown
