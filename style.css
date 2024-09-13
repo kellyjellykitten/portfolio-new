@@ -602,11 +602,19 @@ section .title{
 	position: relative;
 	margin-left: 7rem;
 	visibility: visible;
-	animation: bounce-2 .6s;
     padding: 1.5rem;
     background: rgba(21, 16, 48, 0.4);
     border-radius: 0.75rem;
     box-shadow: 0px 0px 10px 5px rgb(94, 63, 117, 0.25);
+}
+@media (prefers-reduced-motion: no-preference) {
+    @supports (animation-timeline: scroll()) {
+        .experience .timeline-element-content {
+            animation: bounce-2 linear both;
+            animation-timeline: view();
+            animation-range: contain;
+        }
+    }
 }
 @keyframes bounce-2 {
 	0%{
