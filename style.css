@@ -272,21 +272,14 @@ section .title{
     background: rgb(21, 16, 48);
     border-radius: 8px;
     padding: 1.5rem;
+    margin-top: 10px;
     max-width: 325px;
     width: 100%;
     overflow: hidden;
     display: flex;
     flex-direction: column;
 }
-.projects .card-type {
-    color: rgb(118, 112, 126);
-    text-transform: uppercase;
-    font-weight: 800;
-    font-size: 0.875rem;
-    letter-spacing: 1.1px;
-    margin: 0px;
-}
-.projects .img {
+.projects .project-preview {
     height: 175px;
     background: #EDF2F7;
     margin-top: 0px;
@@ -295,6 +288,9 @@ section .title{
     margin-bottom: 1.5rem;
     position: relative;
     object-fit: cover;
+}
+.projects .project-preview:hover {
+    transform: scale(1.1);
 }
 .projects .img:hover {
     transform: scale(1.1);
@@ -345,7 +341,7 @@ section .title{
 .projects .libraries {
     margin-top: 0.5rem;
     margin-inline: 0px;
-    margin-bottom: 0px;
+    margin-bottom: 5px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -384,6 +380,84 @@ section .title{
     background: rgba(154, 230, 180, 0.16);
     color: #9AE6B4;
 }
+.projects .library-html {
+    display: inline-block;
+    vertical-align: middle;
+    padding-inline-start: 0.25rem;
+    padding-inline-end: 0.25rem;
+    font-size: 0.75rem;
+    border-radius: 0.15rem;
+    font-weight: 700;
+    background: rgba(154, 230, 180, 0.16);
+    color: #e69aad;
+}
+.projects .library-python {
+    display: inline-block;
+    vertical-align: middle;
+    padding-inline-start: 0.25rem;
+    padding-inline-end: 0.25rem;
+    font-size: 0.75rem;
+    border-radius: 0.15rem;
+    font-weight: 700;
+    background: rgba(154, 230, 180, 0.16);
+    color: #5bd65b;
+}
+.projects .library-css {
+    display: inline-block;
+    vertical-align: middle;
+    padding-inline-start: 0.25rem;
+    padding-inline-end: 0.25rem;
+    margin-top: 0px;
+    margin-inline: 0.5rem 0px;
+    margin-bottom: 0px;
+    font-size: 0.75rem;
+    border-radius: 0.15rem;
+    font-weight: 700;
+    background: rgba(251, 211, 141, 0.16);
+    color: #5471ee;
+}
+.projects .library-tailwind {
+    display: inline-block;
+    vertical-align: middle;
+    padding-inline-start: 0.25rem;
+    padding-inline-end: 0.25rem;
+    margin-top: 0px;
+    margin-inline: 0.5rem 0px;
+    margin-bottom: 0px;
+    font-size: 0.75rem;
+    border-radius: 0.15rem;
+    font-weight: 700;
+    background: rgba(251, 211, 141, 0.16);
+    color: #fb8dd1;
+}
+.projects .library-bootstrap {
+    display: inline-block;
+    vertical-align: middle;
+    padding-inline-start: 0.25rem;
+    padding-inline-end: 0.25rem;
+    margin-top: 0px;
+    margin-inline: 0.5rem 0px;
+    margin-bottom: 0px;
+    font-size: 0.75rem;
+    border-radius: 0.15rem;
+    font-weight: 700;
+    background: rgba(251, 211, 141, 0.16);
+    color: #f57474;
+}
+.projects .library-nodejs {
+    display: inline-block;
+    vertical-align: middle;
+    padding-inline-start: 0.25rem;
+    padding-inline-end: 0.25rem;
+    margin-top: 0px;
+    margin-inline: 0.5rem 0px;
+    margin-bottom: 0px;
+    font-size: 0.75rem;
+    border-radius: 0.15rem;
+    font-weight: 700;
+    background: rgba(251, 211, 141, 0.16);
+    color: #f4fb8d;
+}
 .projects .library-postgres {
     display: inline-block;
     vertical-align: middle;
@@ -418,9 +492,8 @@ section .title{
     border-radius: 8px;
     margin-top: auto;
     cursor: pointer;
-    font-family: inherit;
-    border: none;
-    font-size: 100%;
+    text-decoration: none;
+    text-align: center;
 }
 .projects .site-link:hover {
     background-color: rgb(170, 166, 195);
@@ -771,6 +844,21 @@ section .title{
 .right form .button-area button:hover{
     color: crimson;
     background: none;
+}
+.contact .code-cats {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 8%;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+}
+.contact figcaption {
+    text-align: center;
+    color:#555;
+    font-style: italic;
 }
 
 /* footer section styling */
