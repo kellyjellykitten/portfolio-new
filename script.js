@@ -53,3 +53,5 @@ window.onclick = function(event) {
         }
     }
 }
+
+//Stop scroll animation from activating upon scrolling back up page
