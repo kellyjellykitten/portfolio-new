@@ -40,7 +40,7 @@ section{
 section .title{
     position: relative;
     text-align: center;
-    font-size: 40px;
+    font-size: 2.5rem;
     font-weight: 500;
     margin-bottom: 50px;
     padding-bottom: 20px;
@@ -100,10 +100,10 @@ section .title{
     transition: color 0.3s ease;
 }
 .navbar .menu li a:hover {
-    color: rgb(129, 58, 245);
+    color: rgb(136, 103, 228);
 }
 .navbar.sticky .menu li a:hover {
-    color: #fff;
+    color: rgb(136, 103, 228);
 }
 @media (max-width: 947px){
     .navbar .menu {
@@ -141,7 +141,7 @@ section .title{
     position: fixed;
     height: 45px;
     width: 42px;
-    background: crimson;
+    background: rgb(83, 61, 145);
     right: 30px;
     bottom: 10px;
     text-align: center;
@@ -216,7 +216,7 @@ section .title{
 }
 .home .home-content a{
     display: inline-block;
-    background: rgb(47, 16, 129);
+    background: rgb(83, 61, 145);
     color: #fff;
     font-size: 1.25rem;
     padding: 12px 36px;
@@ -226,11 +226,10 @@ section .title{
     transition: all 0.3s ease;
 }
 .home .home-content a:hover{
-    color: #fff;
-    background: rgb(65, 23, 182);
+    background: rgb(47, 16, 129);
 }
 .home .home-content i {
-    margin-left: 0.7rem;
+    margin-left: 0.6rem;
 }
 @media only screen and (max-width: 992px) {
     .home .home-content {
@@ -266,7 +265,7 @@ section .title{
 .about .about-content .right{
     width: 55%;
     border-radius: 15px;
-    background-color:#040c2e;
+    background-color:rgb(21, 16, 48);;
     padding: 15px 30px;
 }
 .about .about-content .right .text{
@@ -281,7 +280,7 @@ section .title{
 }
 .about .about-content .right a{
     display: inline-block;
-    background: rgb(47, 16, 129);
+    background: rgb(83, 61, 145);
     color: #fff;
     font-size: 1.1rem;
     font-weight: 400;
@@ -293,8 +292,7 @@ section .title{
     transition: all 0.3s ease;
 }
 .about .about-content .right a:hover{
-    color: #fff;
-    background: rgb(65, 23, 182);
+    background: rgb(47, 16, 129);
 }
 .about .about-content .right i {
     margin-left: 0.5rem;
@@ -514,8 +512,8 @@ section .title{
 .projects .description {
     margin-top: 0.5rem;
     margin-inline: 0px;
-    margin-bottom: 0px;
-    color: rgb(170, 166, 195);
+    margin-bottom: 0.5rem;
+    color: rgb(196, 192, 223);
     background: none;
     text-transform: none;
     font-weight: 300;
@@ -527,16 +525,29 @@ section .title{
     color: rgb(255, 255, 255);
     font-weight: 500;
     padding: 0.5rem 1rem;
-    background-color: rgb(5, 8, 22);
+    background-color: rgb(83, 61, 145);
+    border-radius: 8px;
+    margin-top: 1.1rem;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+}
+.projects .site-link:hover {
+    background-color: rgb(47, 16, 129);
+}
+.projects .git-link {
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    background-color: rgb(83, 61, 145);
     border-radius: 8px;
     margin-top: auto;
     cursor: pointer;
     text-decoration: none;
     text-align: center;
 }
-.projects .site-link:hover {
-    background-color: rgb(170, 166, 195);
-    color: rgb(18, 5, 41)
+.projects .git-link:hover {
+    background-color: rgb(47, 16, 129);
 }
 @media only screen and (max-width: 1080px) {
     .projects .card { 
@@ -567,7 +578,7 @@ section .title{
 .skills .category {
     font-size: 1.5rem;
     font-weight: 700;
-    margin-bottom: 1.3rem;
+    margin-bottom: 1.5rem;
     line-height: 1.35;
 }
 .skills .skill-name {
@@ -789,7 +800,7 @@ section .title{
     width: calc(50% - 30px);
 }
 .contact .contact-content .text{
-    font-size: 20px;
+    font-size: 1.5rem;
     font-weight: 600;
     margin-bottom: 10px;
 }
@@ -809,13 +820,21 @@ section .title{
 }
 .contact .contact-content .row i{
     font-size: 25px;
-    color: crimson;
+    color: rgb(83, 61, 145);
 }
 .contact .contact-content .info .head{
     font-weight: 500;
+    font-size: 1.2rem;
 }
 .contact .contact-content .info .sub-title{
-    color: #333;
+    color: rgb(200, 197, 209);
+    font-size: 1.1rem;
+}
+.contact .contact-content .info a {
+    color: rgb(200, 197, 209);
+}
+.contact .contact-content .info a:hover {
+    color: rgb(83, 61, 145)
 }
 .contact .right form .fields{
     display: flex;
@@ -841,7 +860,7 @@ section .title{
     border-radius: 6px;
     outline: none;
     padding: 0 15px;
-    font-size: 17px;
+    font-size: 1.1rem;
     transition: all 0.3s ease;
 }
 .contact .right form .field input:focus,
@@ -856,30 +875,30 @@ section .title{
     display: flex;
     align-items: center;
 }
-.right form .button-area button{
-    color: #fff;
-    display: block;
-    width: 160px!important;
-    height: 45px;
+.contact input[type=submit] {
+    background-color: rgb(83, 61, 145);
+    border: none;
     outline: none;
-    font-size: 18px;
-    font-weight: 500;
-    border-radius: 6px;
-    cursor: pointer;
-    flex-wrap: nowrap;
-    background: crimson;
-    border: 2px solid crimson;
+    border-radius: 8px;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 1.1rem;
+    font-weight: 400;
     transition: all 0.3s ease;
 }
-.right form .button-area button:hover{
-    color: crimson;
-    background: none;
+.contact input[type=submit]:hover{
+    background-color: rgb(47, 16, 129);
+}
+.contact ::placeholder {
+    font-size: 1.1rem;
+    font-family: 'Poppins', sans-serif;
 }
 .contact .code-cats {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 8%;
+    margin-top: 9%;
     border-radius: 10px;
     width: 100%;
     max-width: 600px;
@@ -887,7 +906,7 @@ section .title{
 }
 .contact figcaption {
     text-align: center;
-    color:#555;
+    color: rgb(200, 197, 209);
     font-style: italic;
 }
 @media (max-width: 500px) {
@@ -905,13 +924,13 @@ section .title{
 
 /* footer section styling */
 footer{
-    background: #111;
+    background: #000000;
     padding: 15px 23px;
     color: #fff;
     text-align: center;
 }
 footer span a{
-    color: crimson;
+    color: rgb(140, 111, 219);
     text-decoration: none;
 }
 footer span a:hover{
