@@ -50,9 +50,10 @@
                     <img src="images/profile-1.png" alt="Photo of me">
                 </div>
                 <div class="column right">
-                    <div class="text">A coding seed was planted.</div>
-                    <p>My name is Kelly Lloyd. After graduating from the University of Florida in 2016 with a BA in English, I found myself working jobs in the real estate and legal fields. But I felt unsatisfied and underfulfilled with that career path, wanting to learn and work with something new, something exciting.</p>
-                    <p>After I got laid off due to COVID-19, I decided to learn software development. I completed online Python and JavaScript courses before transitioning into web development. Over the past four years, I've devoted my time to learning and applying my knowledge to create various projects. When I got my first coding job, my passion for web development blossomed and bloomed. Software and web development allow me to incorporate my creativity and problem solving skills while working with new, emerging technologies.</p>
+                    <div class="text">From words to code.</div>
+                    <p>My name is Kelly Lloyd. I graduated from the University of Florida in 2016 with a BA in English and initially worked in real estate and legal fields.</p>
+                    <p>Feeling unfulfilled, I pivoted to software development after being laid off during COVID-19. I completed online courses in Python and JavaScript, transitioning into web development over the past four years.</p>
+                    <p>My first coding job ignited my passion for creating innovative projects, where I blend creativity and problem-solving with emerging technologies.</p>
                     <a href="/Resume-KellyLloyd.pdf" download>Resume<i class="fa-solid fa-file-arrow-down"></i></a><a href="https://github.com/kellyjellykitten" target="_blank">GitHub<i class="fa-solid fa-arrow-up-right-from-square fa-fw"></i></a>
                 </div>
             </div>
@@ -73,7 +74,7 @@
                         <span class="library-html">HTML</span>
                         <span class="library-css">CSS</span>
                     </div>
-                    <p class="description">Showcasing </p>
+                    <p class="description">Originally built using Vue.js, I re-designed my portfolio site using only HTML, CSS, and some JavaScript. I wanted to showcase my skills of basic web development languages and demonsrate my understanding of core, raw CSS and HTML. JavaScript functions are used for the sticky navbar, scroll behavior (having the scroll up button show once user scrolls down the page), and the open/close logic for a dropdown.</p>
                     <a class="git-link" target="_blank" href="https://github.com/kellyjellykitten/portfolio-new/tree/skillspopup">GitHub</a>
                     <a class="site-link" target="_blank" href="https://kellylloyd.kiwi/">Live Project</a>
                     
@@ -117,7 +118,7 @@
                         <span class="library-javascript">Javascript</span>
                         <span class="library-css">CSS</span>
                     </div>
-                    <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas non augue pretium, pretium magna quis.</p>
+                    <p class="description">Originally built using Python and Pygame, this is a pathfinding algorithm visualizer re-built with Vue.js and CSS. The algorithms include Breadth First Search, Depth First Search, and the Bellman-Ford Algorithm. Users can draw edges or walls, then watch the algorithm working itself around those barriers from start node to end node.</p>
                     <a class="git-link" target="_blank" href="https://github.com/kellyjellykitten/algorithmvisualizer/tree/modaltest2">GitHub</a>
                     <a class="site-link" target="_blank" href="https://pathfindingvisual.netlify.app/">Live Project</a>
                 </div>
@@ -129,7 +130,7 @@
                     <div class="libraries">
                         <span class="library-python">Python</span>
                     </div>
-                    <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas non augue pretium, pretium magna quis.</p>
+                    <p class="description">A side scroller game built using Python and Pygame that increases in speed over time while tracking the player's score. The user character continuously runs forwards as the background moves left at a certain speed continously. Obstacles appear for which the user must jump or slide to avoid. Game ends once a collision occurs.</p>
                     <a class="git-link" target="_blank" href="https://github.com/kellyjellykitten/sidescroller">GitHub</a>
                     <a class="site-link" target="_blank" href="https://youtu.be/mIr4OlAwQek">Project Demo</a>
                 </div>
@@ -202,7 +203,7 @@
                 <div class="col">
                     <div class="category">Other tools</div>
                     <details name="accordian">
-                        <summary><b>AWS</b></summary>
+                        <summary title="Expand AWS skills"><b>AWS</b></summary>
                         <p class="accordian">S3</p>
                         <p class="accordian">Route 53</p>
                         <p class="accordian">CloudFront</p>
@@ -327,23 +328,23 @@
                 </div>
                 <div class="column right">
                     <div class="text">Message me</div>
-                    <form action="mailto:kellybackwards@gmail.com" method="post" enctype="text/plain">
+                    <form action="#">
                         <div class="fields">
                             <div class="field name">
-                                <input type="text" name="name" placeholder="Name" required>
+                                <input type="text" name="name" id="name" placeholder="Name" required>
                             </div>
                             <div class="field email">
-                                <input type="text" name="mail" placeholder="Email" required>
+                                <input type="text" name="email" id="email" placeholder="Email" required>
                             </div>
                         </div>
                         <div class="field">
-                            <input type="text" placeholder="Subject" required>
+                            <input type="text" name="subject" id="subject" placeholder="Subject" required>
                         </div>
                         <div class="field textarea">
-                            <textarea cols="30" rows="10" placeholder="Message" required></textarea>
+                            <textarea cols="30" rows="10" name="message" id="message" placeholder="Message" required></textarea>
                         </div>
                         <div class="button-area">
-                            <input type="submit" value="Send message"></input>
+                            <button type="submit">Send message</button>
                         </div>
                     </form>
                 </div>
@@ -359,7 +360,8 @@
     <footer>
         <span>Created by <a href="https://github.com/kellyjellykitten">Kelly Lloyd</a> | <span class="fa-regular fa-copyright"></span> 2024</span>
     </footer>
-
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="script.js"></script>
 </body>
 </html>
