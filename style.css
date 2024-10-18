@@ -173,6 +173,7 @@ section .title{
     .menu-btn{
         display: block;
         z-index: 999;
+        margin-left: 1rem;
     }
     .menu-btn i.active:before{
         content: "\f00d";
