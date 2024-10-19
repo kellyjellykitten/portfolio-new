@@ -19,6 +19,11 @@ html{
     scroll-behavior: smooth;
 }
 
+@media only screen and (max-width: 1180px) {
+    html {
+        overflow-x: hidden;
+    }
+}
 /* all similar content styling codes */
 section{
     padding: 100px 0;
