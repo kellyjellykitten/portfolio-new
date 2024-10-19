@@ -1,0 +1,24 @@
+{
+  "name": "portfolio-new",
+  "version": "1.0.0",
+  "description": "",
+  "source": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel",
+    "build": "parcel build --dist-dir public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kellyjellykitten/portfolio-new.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kellyjellykitten/portfolio-new/issues"
+  },
+  "homepage": "https://github.com/kellyjellykitten/portfolio-new#readme",
+  "devDependencies": {
+    "parcel": "^2.12.0"
+  }
+}
