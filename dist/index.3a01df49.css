@@ -68,7 +68,7 @@ section .title {
     max-width: 930px;
   }
 
-  .skills .skills-content .column, .contact .contact-content .column {
+  .skills .skills-content .column {
     width: 100%;
     margin-bottom: 35px;
   }
@@ -1013,6 +1013,21 @@ section .title {
   text-align: center;
   color: #c8c5d1;
   font-style: italic;
+}
+
+@media only screen and (width <= 768px) {
+  .contact .contact-content {
+    flex-direction: column;
+  }
+
+  .contact .contact-content .column {
+    width: auto;
+    margin-bottom: 35px;
+  }
+
+  .contact .contact-content .left {
+    margin-left: 2rem;
+  }
 }
 
 @media (width <= 500px) {

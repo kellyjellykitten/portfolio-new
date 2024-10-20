@@ -61,11 +61,11 @@ section .title{
     }
 }
 @media (max-width: 947px){
-    .max-width{
+    .max-width {
         max-width: 930px;
     }
-    .skills .skills-content .column,
-    .contact .contact-content .column{
+    .skills .skills-content .column
+    {
         width: 100%;
         margin-bottom: 35px;
     }
@@ -923,6 +923,18 @@ section .title{
     text-align: center;
     color: rgb(200, 197, 209);
     font-style: italic;
+}
+@media only screen and (max-width: 768px) {
+    .contact .contact-content {
+        flex-direction: column;
+    }
+    .contact .contact-content .column {
+        width: auto;
+        margin-bottom: 35px;
+    }
+    .contact .contact-content .left {
+        margin-left: 2rem;
+    }
 }
 @media (max-width: 500px) {
     .contact .right form .fields{
