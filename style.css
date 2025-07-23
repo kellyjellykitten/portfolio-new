@@ -1,7 +1,7 @@
 /*  import google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -15,7 +15,7 @@ body {
     padding: 0;
     overflow-x: hidden; 
 }
-html{
+html {
     scroll-behavior: smooth;
 }
 
@@ -25,29 +25,28 @@ html{
     }
 }
 /* all similar content styling codes */
-section{
+section {
     padding: 100px 0;
 }
-.max-width{
+.max-width {
     max-width: 1300px;
     padding: 0 80px;
     margin: auto;
 }
-.nav-max-width{
+.nav-max-width {
     max-width: 100%;
     margin: auto;
     padding: 0 80px;
 }
 .about .about-content,
-.projects ,
-.skills .skills-content,
-.contact .contact-content{
+.projects,
+.skills .skills-content, .contact .contact-content {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
 }
-section .title{
+section .title {
     position: relative;
     text-align: center;
     font-size: 2.5rem;
@@ -60,7 +59,7 @@ section .title{
         padding: 0 50px;
     }
 }
-@media (max-width: 947px){
+@media (max-width: 947px) {
     .max-width {
         max-width: 930px;
     }
@@ -326,6 +325,12 @@ section .title{
         flex: 100%;
     }
 }
+@media only screen and (max-width: 500px) {
+    .about .about-content .left img{
+        height: 255px;
+        width: 255px;
+    }
+}
 
 /* projects section styling */
 .projects, .experience, .skills, .contact{
@@ -338,21 +343,23 @@ section .title{
 } 
 .projects .container {
     display: flex;
-    max-width: 1150px;
-    margin: 0 auto;
-    padding: 0 30px;
-    column-gap: 40px;
     flex-wrap: wrap;
+    width: 100%;
+    margin-inline: auto;
+    max-width: 70rem;
+    padding-inline-start: 1rem;
+    padding-inline-end: 1rem;
+    padding: 6.5px;
+    column-gap: 40px;
 }
 .projects .card {
+    display: flex;
     background: rgb(21, 16, 48);
     border-radius: 8px;
     padding: 1.5rem;
     margin-top: 10px;
+    margin-bottom: 20px;
     max-width: 325px;
-    width: 100%;
-    overflow: hidden;
-    display: flex;
     flex-direction: column;
 }
 .projects .project-preview {
@@ -393,15 +400,6 @@ section .title{
     flex-direction: row;
     align-items: center;
 }
-/* .library{
-    display: inline-block;
-    vertical-align: middle;
-    padding-inline-start: 0.25rem;
-    padding-inline-end: 0.25rem;
-    font-size: 0.75rem;
-    border-radius: 0.15rem;
-    font-weight: 700;
-} */
 .projects .library-vue{
     display: inline-block;
     vertical-align: middle;
@@ -412,6 +410,29 @@ section .title{
     font-weight: 700;
     background: rgba(129, 230, 217, 0.16);
     color: #81E6D9;
+}
+.projects .library-react{
+    display: inline-block;
+    vertical-align: middle;
+    padding-inline-start: 0.25rem;
+    padding-inline-end: 0.25rem;
+    font-size: 0.75rem;
+    border-radius: 0.15rem;
+    font-weight: 700;
+    background: rgba(129, 230, 217, 0.16);
+    color: #e6c681;
+}
+.projects .library-redux{
+    display: inline-block;
+    vertical-align: middle;
+    padding-inline-start: 0.25rem;
+    padding-inline-end: 0.25rem;
+    margin-inline: 0.5rem 0px;
+    font-size: 0.75rem;
+    border-radius: 0.15rem;
+    font-weight: 700;
+    background: rgba(129, 230, 217, 0.16);
+    color: #ca944d;
 }
 .projects .library-javascript {
     display: inline-block;
@@ -424,7 +445,7 @@ section .title{
     font-size: 0.75rem;
     border-radius: 0.15rem;
     font-weight: 700;
-    background: rgba(154, 230, 180, 0.16);
+    background: rgba(129, 230, 217, 0.16);
     color: #9AE6B4;
 }
 .projects .library-html {
@@ -435,7 +456,7 @@ section .title{
     font-size: 0.75rem;
     border-radius: 0.15rem;
     font-weight: 700;
-    background: rgba(154, 230, 180, 0.16);
+    background: rgba(129, 230, 217, 0.16);
     color: #e69aad;
 }
 .projects .library-python {
@@ -446,7 +467,7 @@ section .title{
     font-size: 0.75rem;
     border-radius: 0.15rem;
     font-weight: 700;
-    background: rgba(154, 230, 180, 0.16);
+    background: rgba(129, 230, 217, 0.16);
     color: #5bd65b;
 }
 .projects .library-css {
@@ -460,7 +481,7 @@ section .title{
     font-size: 0.75rem;
     border-radius: 0.15rem;
     font-weight: 700;
-    background: rgba(251, 211, 141, 0.16);
+    background: rgba(129, 230, 217, 0.16);
     color: #5471ee;
 }
 .projects .library-tailwind {
@@ -474,7 +495,7 @@ section .title{
     font-size: 0.75rem;
     border-radius: 0.15rem;
     font-weight: 700;
-    background: rgba(251, 211, 141, 0.16);
+    background: rgba(129, 230, 217, 0.16);
     color: #fb8dd1;
 }
 .projects .library-bootstrap {
@@ -488,7 +509,7 @@ section .title{
     font-size: 0.75rem;
     border-radius: 0.15rem;
     font-weight: 700;
-    background: rgba(251, 211, 141, 0.16);
+    background: rgba(129, 230, 217, 0.16);
     color: #f57474;
 }
 .projects .library-nodejs {
@@ -502,7 +523,7 @@ section .title{
     font-size: 0.75rem;
     border-radius: 0.15rem;
     font-weight: 700;
-    background: rgba(251, 211, 141, 0.16);
+    background: rgba(129, 230, 217, 0.16);
     color: #f4fb8d;
 }
 .projects .library-postgres {
@@ -516,8 +537,8 @@ section .title{
     font-size: 0.75rem;
     border-radius: 0.15rem;
     font-weight: 700;
-    background: rgba(251, 211, 141, 0.16);
-    color: #FBD38D;
+    background: rgba(129, 230, 217, 0.16);
+    color: #b9bb48;
 }
 .projects .description {
     margin-top: 0.5rem;
@@ -559,11 +580,13 @@ section .title{
 .projects .git-link:hover {
     background-color: rgb(47, 16, 129);
 }
+
 @media only screen and (max-width: 1080px) {
-    .projects .card { 
-        display: block;
-        width: 100%;
+    .projects .container {
+        display: flex;
+        flex-direction: column;
         margin-top: 0.5rem;
+        gap: 2rem;
     }
 }
 
@@ -806,6 +829,10 @@ section .title{
 }
 
 /* contact section styling */
+
+.contact .contact-content {
+    padding: 0px 30px;
+}
 .contact .contact-content .column{
     width: calc(50% - 30px);
 }
@@ -834,11 +861,11 @@ section .title{
 }
 .contact .contact-content .info .head{
     font-weight: 500;
-    font-size: 1.2rem;
+    font-size: 18px;
 }
 .contact .contact-content .info .sub-title{
     color: rgb(200, 197, 209);
-    font-size: 1.1rem;
+    font-size: 16px;
 }
 .contact .contact-content .info a {
     color: rgb(200, 197, 209);
@@ -874,18 +901,18 @@ section .title{
     transition: all 0.3s ease;
 }
 .contact .right form .field input:focus,
-.contact .right form .textarea textarea:focus{
+.contact .right form .textarea textarea:focus {
     border-color: #4316e6;
     box-shadow: 0px 0px 8px 6px rgb(83, 61, 145);
 }
-.contact .right form .textarea textarea{
+.contact .right form .textarea textarea {
     padding-top: 10px;
     resize: none;
 }
 .contact .right form .textarea textarea#message {
     font-family: 'Poppins', sans-serif;
 }
-.contact .right form .button-area{
+.contact .right form .button-area {
     display: flex;
     align-items: center;
 }
@@ -898,11 +925,11 @@ section .title{
     padding: 0.75rem 1.5rem;
     text-decoration: none;
     color: rgb(255, 255, 255);
-    font-size: 1.1rem;
+    font-size: 18px;
     font-weight: 400;
     transition: all 0.3s ease;
 }
-.contact form button:hover{
+.contact form button:hover {
     background-color: rgb(47, 16, 129);
 }
 .contact ::placeholder {
@@ -932,16 +959,13 @@ section .title{
         width: auto;
         margin-bottom: 35px;
     }
-    .contact .contact-content .left {
-        margin-left: 2rem;
-    }
 }
 @media (max-width: 500px) {
     .contact .right form .fields{
         flex-direction: column;
     }
     .contact .right form .name,
-    .contact .right form .email{
+    .contact .right form .email {
         margin: 0;
     }
     .right form .error-box{
@@ -950,16 +974,16 @@ section .title{
 }
 
 /* footer section styling */
-footer{
-    background: #000000;
+footer {
+    background: rgb(5, 8, 22);
     padding: 15px 23px;
     color: #fff;
     text-align: center;
 }
-footer span a{
+footer span a {
     color: rgb(140, 111, 219);
     text-decoration: none;
 }
-footer span a:hover{
+footer span a:hover {
     text-decoration: underline;
 }

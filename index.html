@@ -66,6 +66,21 @@
             <h1 class="title">Projects</h1>
             <div class="container">
                 <div class="card">
+                    <img class="project-preview" src="./images/vampirebound.png" alt="Image preview of project">
+                    <div class="headline">
+                        <h2>Vampirebound</h2>
+                    </div>
+                    <div class="libraries">
+                        <span class="library-react">React</span>
+                        <span class="library-redux">Redux</span>
+                        <span class="library-tailwind">Tailwind CSS</span>
+                    </div>
+                    <p class="description">A role-playing journaling game in which a user creates a vampire character and chronicles their life by answering a series of prompts. Using Redux Toolkit, a slice creates the initial vampire state and the actions it reacts to (saving all information the user enters during character creation to later use and manipulate during gameplay). Hosted on AWS S3 as a subdomain using Route 53, CloudFront, and Certificate Manager.</p>
+                    <a class="git-link" target="_blank" href="https://github.com/kellyjellykitten/vampire-game/tree/rework-memories">GitHub</a>
+                    <a class="site-link" target="_blank" href="https://vampirebound.kellylloyd.kiwi/">Live Project</a>
+                    
+                </div>
+                <div class="card">
                     <img class="project-preview" src="./images/portfolio.png" alt="Image preview of project">
                     <div class="headline">
                         <h2>Portfolio Site</h2>
@@ -74,7 +89,7 @@
                         <span class="library-html">HTML</span>
                         <span class="library-css">CSS</span>
                     </div>
-                    <p class="description">Originally built using Vue.js, I re-designed my portfolio site using only HTML, CSS, and some JavaScript. This site demonsrates my understanding of core CSS and HTML skills. JavaScript functions are used for the sticky navbar, scroll behavior (having the scroll up button show once user scrolls down the page), contact form submission, and the open/close logic for an accordian.</p>
+                    <p class="description">This site demonsrates my understanding of core CSS and HTML skills. JavaScript functions are used for the sticky navbar, scroll behavior (having the scroll up button show once user scrolls down the page), contact form submission, and the open/close logic for an accordian. Hosted on AWS using S3, Route 53, CloudFront, and Certificate Manager.</p>
                     <a class="git-link" target="_blank" href="https://github.com/kellyjellykitten/portfolio-new/tree/skillspopup">GitHub</a>
                     <a class="site-link" target="_blank" href="https://kellylloyd.kiwi/">Live Project</a>
                     
@@ -160,6 +175,10 @@
                 <div class="skill-name">
                     <img src="images/logos/python.svg" class="logo" alt="Python logo">
                     <p>Python</p>
+                </div>
+                <div class="skill-name">
+                    <img src="images/logos/csharp.svg" class="logo" alt="C# logo">
+                    <p>C#</p>
                 </div>   
                 </div>
                 <div class="col">
@@ -319,9 +338,9 @@
                         </div>
                         <div class="row">
                             <i class="fa-solid fa-location-dot"></i>
-                            <div class="info">
+                            <div class="info" style="margin-left:2.2rem;">
                                 <div class="head">Address</div>
-                                <div class="sub-title">767 92nd Ave N, St. Petersburg, FL 33702</div>
+                                <div class="sub-title">St. Petersburg, FL</div>
                             </div>
                         </div>
                     </div>
@@ -358,7 +377,7 @@
 
     <!-- footer section start -->
     <footer>
-        <span>Created by <a href="https://github.com/kellyjellykitten">Kelly Lloyd</a> | <span class="fa-regular fa-copyright"></span> 2024</span>
+        <span>Created by <a href="https://github.com/kellyjellykitten" target="_blank" title="View my GitHub">Kelly Lloyd</a>
     </footer>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>

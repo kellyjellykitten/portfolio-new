@@ -34,23 +34,6 @@ $(document).ready(function(){
     });
 });
 
-//Toggle hamburger menu with X
-const menuBtn = document.querySelector(".menu-btn");
-//Set initial state of icon
-let showMenu = false;
-
-menuBtn.addEventListener("click", toggleIcon);
-
-function toggleIcon() {
-    if (!showmenu) {
-        menuBtn.classList.add("close");
-        showMenu = true;
-    } else {
-        menuBtn.classList.remove("close");
-        showMenu = false;
-    }
-}
-
 //AWS skills accordian
 //When user clicks button, toggle b/w hiding & showing the content
 const openSkills = () => {
